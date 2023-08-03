@@ -10,11 +10,11 @@ SHARDCOUNT = 4   #Total number of primary shards.  Can be 2,3 or 4
 HOST = "127.0.0.1"
 PORT = "6379"
 PASSWORD="passwordhere"
-PipeLineSize = 1000000
+PipeLineSize = 5000
 #
 # Bloom Filter Parameters
 #
-TotalItemsAddedToFilters = 5000  #Total Estimated Items in all Bloom Filters
+TotalItemsAddedToFilters = 1000000  #Total Estimated Items in all Bloom Filters
 ErrorRate = .01
 capacity = TotalItemsAddedToFilters//SHARDCOUNT
 
